@@ -1,4 +1,4 @@
-class HealthController < ActionController::Base
+class HealthController < ApplicationController
     def show
         render json: { ok: true, uptime: uptime + " seconds"}
     end
